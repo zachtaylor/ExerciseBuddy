@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F0311A017BA7CED0032E0DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F03119F17BA7CED0032E0DC /* UIKit.framework */; };
+		9F0311A217BA7CED0032E0DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0311A117BA7CED0032E0DC /* Foundation.framework */; };
+		9F0311A417BA7CED0032E0DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0311A317BA7CED0032E0DC /* CoreGraphics.framework */; };
+		9F0311A617BA7CED0032E0DC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F0311A517BA7CED0032E0DC /* CoreData.framework */; };
+		9F0311AC17BA7CED0032E0DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F0311AA17BA7CED0032E0DC /* InfoPlist.strings */; };
+		9F0311AE17BA7CED0032E0DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0311AD17BA7CED0032E0DC /* main.m */; };
+		9F0311B217BA7CED0032E0DC /* ExerciseBuddyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0311B117BA7CED0032E0DC /* ExerciseBuddyAppDelegate.m */; };
+		9F0311B417BA7CED0032E0DC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0311B317BA7CED0032E0DC /* Default.png */; };
+		9F0311B617BA7CED0032E0DC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0311B517BA7CED0032E0DC /* Default@2x.png */; };
+		9F0311B817BA7CED0032E0DC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0311B717BA7CED0032E0DC /* Default-568h@2x.png */; };
+		9F0311BB17BA7CED0032E0DC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F0311B917BA7CED0032E0DC /* MainStoryboard.storyboard */; };
+		9F0311BE17BA7CED0032E0DC /* ExerciseBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F0311BC17BA7CED0032E0DC /* ExerciseBuddy.xcdatamodeld */; };
+		9F0311C117BA7CED0032E0DC /* ExerciseBuddyMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0311C017BA7CED0032E0DC /* ExerciseBuddyMainViewController.m */; };
+		9F0311CC17BA80400032E0DC /* ExerciseListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0311CB17BA80400032E0DC /* ExerciseListController.m */; };
+		9F0311CF17BA89DD0032E0DC /* AddExerciseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0311CE17BA89DD0032E0DC /* AddExerciseController.m */; };
+		9F0311F617BAC75D0032E0DC /* ExerciseBuddyDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0311F017BAC75D0032E0DC /* ExerciseBuddyDataModel.m */; };
+		9F0311FA17BAC9BA0032E0DC /* runner.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0311F917BAC9BA0032E0DC /* runner.png */; };
+		9F0311FD17BACA0C0032E0DC /* weight.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0311FC17BACA0C0032E0DC /* weight.png */; };
+		9F0311FF17BACDA40032E0DC /* graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0311FE17BACDA40032E0DC /* graph.png */; };
+		9F16CB7817BD0A8B0019146D /* WorkoutListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F16CB7717BD0A8B0019146D /* WorkoutListController.m */; };
+		9F16CB8217BD19860019146D /* LiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F16CB8117BD19860019146D /* LiftCell.m */; };
+		9F16CB8517BD1A5C0019146D /* LiftsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F16CB8417BD1A5C0019146D /* LiftsDetailController.m */; };
+		9F43131117BBD6F700F8204C /* RoutinesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F43131017BBD6F700F8204C /* RoutinesListController.m */; };
+		9F43131417BBDC0600F8204C /* AddRoutineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F43131317BBDC0600F8204C /* AddRoutineController.m */; };
+		9F43131917BC17C500F8204C /* writing.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F43131817BC17C400F8204C /* writing.png */; };
+		9FB8A57F17BD3DCC0086A03A /* Workout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8A57E17BD3DCC0086A03A /* Workout.m */; };
+		9FB8A58217BD3DEB0086A03A /* Lift.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8A58117BD3DEB0086A03A /* Lift.m */; };
+		9FB8A58517BD3E050086A03A /* Muscle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8A58417BD3E050086A03A /* Muscle.m */; };
+		9FB8A58817BD3E1A0086A03A /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8A58717BD3E1A0086A03A /* Exercise.m */; };
+		9FB8A58B17BD3EC60086A03A /* Routine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8A58A17BD3EC60086A03A /* Routine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9F03119C17BA7CED0032E0DC /* ExerciseBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciseBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F03119F17BA7CED0032E0DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9F0311A117BA7CED0032E0DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9F0311A317BA7CED0032E0DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9F0311A517BA7CED0032E0DC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9F0311A917BA7CED0032E0DC /* ExerciseBuddy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExerciseBuddy-Info.plist"; sourceTree = "<group>"; };
+		9F0311AB17BA7CED0032E0DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F0311AD17BA7CED0032E0DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F0311AF17BA7CED0032E0DC /* ExerciseBuddy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExerciseBuddy-Prefix.pch"; sourceTree = "<group>"; };
+		9F0311B017BA7CED0032E0DC /* ExerciseBuddyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExerciseBuddyAppDelegate.h; sourceTree = "<group>"; };
+		9F0311B117BA7CED0032E0DC /* ExerciseBuddyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExerciseBuddyAppDelegate.m; sourceTree = "<group>"; };
+		9F0311B317BA7CED0032E0DC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9F0311B517BA7CED0032E0DC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9F0311B717BA7CED0032E0DC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9F0311BA17BA7CED0032E0DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		9F0311BD17BA7CED0032E0DC /* ExerciseBuddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExerciseBuddy.xcdatamodel; sourceTree = "<group>"; };
+		9F0311BF17BA7CED0032E0DC /* ExerciseBuddyMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExerciseBuddyMainViewController.h; sourceTree = "<group>"; };
+		9F0311C017BA7CED0032E0DC /* ExerciseBuddyMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExerciseBuddyMainViewController.m; sourceTree = "<group>"; };
+		9F0311CA17BA80400032E0DC /* ExerciseListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseListController.h; sourceTree = "<group>"; };
+		9F0311CB17BA80400032E0DC /* ExerciseListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseListController.m; sourceTree = "<group>"; };
+		9F0311CD17BA89DD0032E0DC /* AddExerciseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddExerciseController.h; sourceTree = "<group>"; };
+		9F0311CE17BA89DD0032E0DC /* AddExerciseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddExerciseController.m; sourceTree = "<group>"; };
+		9F0311EF17BAC75D0032E0DC /* ExerciseBuddyDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseBuddyDataModel.h; path = Model/ExerciseBuddyDataModel.h; sourceTree = "<group>"; };
+		9F0311F017BAC75D0032E0DC /* ExerciseBuddyDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; name = ExerciseBuddyDataModel.m; path = Model/ExerciseBuddyDataModel.m; sourceTree = "<group>"; tabWidth = 2; };
+		9F0311F917BAC9BA0032E0DC /* runner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = runner.png; path = ../runner.png; sourceTree = "<group>"; };
+		9F0311FC17BACA0C0032E0DC /* weight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weight.png; path = Resources/weight.png; sourceTree = SOURCE_ROOT; };
+		9F0311FE17BACDA40032E0DC /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graph.png; path = Resources/graph.png; sourceTree = SOURCE_ROOT; };
+		9F16CB7617BD0A8B0019146D /* WorkoutListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkoutListController.h; sourceTree = "<group>"; };
+		9F16CB7717BD0A8B0019146D /* WorkoutListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkoutListController.m; sourceTree = "<group>"; };
+		9F16CB8017BD19860019146D /* LiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiftCell.h; sourceTree = "<group>"; };
+		9F16CB8117BD19860019146D /* LiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiftCell.m; sourceTree = "<group>"; };
+		9F16CB8317BD1A5C0019146D /* LiftsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiftsDetailController.h; sourceTree = "<group>"; };
+		9F16CB8417BD1A5C0019146D /* LiftsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiftsDetailController.m; sourceTree = "<group>"; };
+		9F43130F17BBD6F700F8204C /* RoutinesListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutinesListController.h; sourceTree = "<group>"; };
+		9F43131017BBD6F700F8204C /* RoutinesListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutinesListController.m; sourceTree = "<group>"; };
+		9F43131217BBDC0600F8204C /* AddRoutineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRoutineController.h; sourceTree = "<group>"; };
+		9F43131317BBDC0600F8204C /* AddRoutineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRoutineController.m; sourceTree = "<group>"; };
+		9F43131817BC17C400F8204C /* writing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = writing.png; path = Resources/writing.png; sourceTree = SOURCE_ROOT; };
+		9FB8A57D17BD3DCC0086A03A /* Workout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Workout.h; path = Model/Workout.h; sourceTree = "<group>"; };
+		9FB8A57E17BD3DCC0086A03A /* Workout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Workout.m; path = Model/Workout.m; sourceTree = "<group>"; };
+		9FB8A58017BD3DEB0086A03A /* Lift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lift.h; path = Model/Lift.h; sourceTree = "<group>"; };
+		9FB8A58117BD3DEB0086A03A /* Lift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Lift.m; path = Model/Lift.m; sourceTree = "<group>"; };
+		9FB8A58317BD3E050086A03A /* Muscle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Muscle.h; path = Model/Muscle.h; sourceTree = "<group>"; };
+		9FB8A58417BD3E050086A03A /* Muscle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Muscle.m; path = Model/Muscle.m; sourceTree = "<group>"; };
+		9FB8A58617BD3E1A0086A03A /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exercise.h; path = Model/Exercise.h; sourceTree = "<group>"; };
+		9FB8A58717BD3E1A0086A03A /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Exercise.m; path = Model/Exercise.m; sourceTree = "<group>"; };
+		9FB8A58917BD3EC60086A03A /* Routine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Routine.h; path = Model/Routine.h; sourceTree = "<group>"; };
+		9FB8A58A17BD3EC60086A03A /* Routine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Routine.m; path = Model/Routine.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F03119917BA7CED0032E0DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0311A017BA7CED0032E0DC /* UIKit.framework in Frameworks */,
+				9F0311A217BA7CED0032E0DC /* Foundation.framework in Frameworks */,
+				9F0311A417BA7CED0032E0DC /* CoreGraphics.framework in Frameworks */,
+				9F0311A617BA7CED0032E0DC /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F03119317BA7CED0032E0DC = {
+			isa = PBXGroup;
+			children = (
+				9F0311A717BA7CED0032E0DC /* ExerciseBuddy */,
+				9F03119E17BA7CED0032E0DC /* Frameworks */,
+				9F03119D17BA7CED0032E0DC /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		9F03119D17BA7CED0032E0DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F03119C17BA7CED0032E0DC /* ExerciseBuddy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F03119E17BA7CED0032E0DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F03119F17BA7CED0032E0DC /* UIKit.framework */,
+				9F0311A117BA7CED0032E0DC /* Foundation.framework */,
+				9F0311A317BA7CED0032E0DC /* CoreGraphics.framework */,
+				9F0311A517BA7CED0032E0DC /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F0311A717BA7CED0032E0DC /* ExerciseBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				9F0311FB17BAC9E10032E0DC /* Resource */,
+				9F0311EC17BAC7480032E0DC /* Model */,
+				9F0311B017BA7CED0032E0DC /* ExerciseBuddyAppDelegate.h */,
+				9F0311B117BA7CED0032E0DC /* ExerciseBuddyAppDelegate.m */,
+				9F0311B917BA7CED0032E0DC /* MainStoryboard.storyboard */,
+				9F16CB8317BD1A5C0019146D /* LiftsDetailController.h */,
+				9F16CB8417BD1A5C0019146D /* LiftsDetailController.m */,
+				9F16CB8017BD19860019146D /* LiftCell.h */,
+				9F16CB8117BD19860019146D /* LiftCell.m */,
+				9F0311CA17BA80400032E0DC /* ExerciseListController.h */,
+				9F0311CB17BA80400032E0DC /* ExerciseListController.m */,
+				9F0311CD17BA89DD0032E0DC /* AddExerciseController.h */,
+				9F0311CE17BA89DD0032E0DC /* AddExerciseController.m */,
+				9F0311BF17BA7CED0032E0DC /* ExerciseBuddyMainViewController.h */,
+				9F0311C017BA7CED0032E0DC /* ExerciseBuddyMainViewController.m */,
+				9F43130F17BBD6F700F8204C /* RoutinesListController.h */,
+				9F43131017BBD6F700F8204C /* RoutinesListController.m */,
+				9F43131217BBDC0600F8204C /* AddRoutineController.h */,
+				9F43131317BBDC0600F8204C /* AddRoutineController.m */,
+				9F16CB7617BD0A8B0019146D /* WorkoutListController.h */,
+				9F16CB7717BD0A8B0019146D /* WorkoutListController.m */,
+				9F0311BC17BA7CED0032E0DC /* ExerciseBuddy.xcdatamodeld */,
+				9F0311A817BA7CED0032E0DC /* Supporting Files */,
+			);
+			path = ExerciseBuddy;
+			sourceTree = "<group>";
+		};
+		9F0311A817BA7CED0032E0DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F0311A917BA7CED0032E0DC /* ExerciseBuddy-Info.plist */,
+				9F0311AA17BA7CED0032E0DC /* InfoPlist.strings */,
+				9F0311AD17BA7CED0032E0DC /* main.m */,
+				9F0311AF17BA7CED0032E0DC /* ExerciseBuddy-Prefix.pch */,
+				9F0311B317BA7CED0032E0DC /* Default.png */,
+				9F0311B517BA7CED0032E0DC /* Default@2x.png */,
+				9F0311B717BA7CED0032E0DC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F0311EC17BAC7480032E0DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FB8A58917BD3EC60086A03A /* Routine.h */,
+				9FB8A58A17BD3EC60086A03A /* Routine.m */,
+				9FB8A58617BD3E1A0086A03A /* Exercise.h */,
+				9FB8A58717BD3E1A0086A03A /* Exercise.m */,
+				9FB8A58317BD3E050086A03A /* Muscle.h */,
+				9FB8A58417BD3E050086A03A /* Muscle.m */,
+				9FB8A58017BD3DEB0086A03A /* Lift.h */,
+				9FB8A58117BD3DEB0086A03A /* Lift.m */,
+				9FB8A57D17BD3DCC0086A03A /* Workout.h */,
+				9FB8A57E17BD3DCC0086A03A /* Workout.m */,
+				9F0311EF17BAC75D0032E0DC /* ExerciseBuddyDataModel.h */,
+				9F0311F017BAC75D0032E0DC /* ExerciseBuddyDataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9F0311FB17BAC9E10032E0DC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9F43131817BC17C400F8204C /* writing.png */,
+				9F0311FE17BACDA40032E0DC /* graph.png */,
+				9F0311FC17BACA0C0032E0DC /* weight.png */,
+				9F0311F917BAC9BA0032E0DC /* runner.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F03119B17BA7CED0032E0DC /* ExerciseBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F0311C717BA7CED0032E0DC /* Build configuration list for PBXNativeTarget "ExerciseBuddy" */;
+			buildPhases = (
+				9F03119817BA7CED0032E0DC /* Sources */,
+				9F03119917BA7CED0032E0DC /* Frameworks */,
+				9F03119A17BA7CED0032E0DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExerciseBuddy;
+			productName = ExerciseBuddy;
+			productReference = 9F03119C17BA7CED0032E0DC /* ExerciseBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F03119417BA7CED0032E0DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ExerciseBuddy;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Zach Taylor";
+			};
+			buildConfigurationList = 9F03119717BA7CED0032E0DC /* Build configuration list for PBXProject "ExerciseBuddy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9F03119317BA7CED0032E0DC;
+			productRefGroup = 9F03119D17BA7CED0032E0DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F03119B17BA7CED0032E0DC /* ExerciseBuddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F03119A17BA7CED0032E0DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0311AC17BA7CED0032E0DC /* InfoPlist.strings in Resources */,
+				9F0311B417BA7CED0032E0DC /* Default.png in Resources */,
+				9F0311B617BA7CED0032E0DC /* Default@2x.png in Resources */,
+				9F0311B817BA7CED0032E0DC /* Default-568h@2x.png in Resources */,
+				9F0311BB17BA7CED0032E0DC /* MainStoryboard.storyboard in Resources */,
+				9F0311FA17BAC9BA0032E0DC /* runner.png in Resources */,
+				9F0311FD17BACA0C0032E0DC /* weight.png in Resources */,
+				9F0311FF17BACDA40032E0DC /* graph.png in Resources */,
+				9F43131917BC17C500F8204C /* writing.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F03119817BA7CED0032E0DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F0311AE17BA7CED0032E0DC /* main.m in Sources */,
+				9F0311B217BA7CED0032E0DC /* ExerciseBuddyAppDelegate.m in Sources */,
+				9F0311BE17BA7CED0032E0DC /* ExerciseBuddy.xcdatamodeld in Sources */,
+				9F0311C117BA7CED0032E0DC /* ExerciseBuddyMainViewController.m in Sources */,
+				9F0311CC17BA80400032E0DC /* ExerciseListController.m in Sources */,
+				9F0311CF17BA89DD0032E0DC /* AddExerciseController.m in Sources */,
+				9F0311F617BAC75D0032E0DC /* ExerciseBuddyDataModel.m in Sources */,
+				9F43131117BBD6F700F8204C /* RoutinesListController.m in Sources */,
+				9F43131417BBDC0600F8204C /* AddRoutineController.m in Sources */,
+				9F16CB7817BD0A8B0019146D /* WorkoutListController.m in Sources */,
+				9F16CB8217BD19860019146D /* LiftCell.m in Sources */,
+				9F16CB8517BD1A5C0019146D /* LiftsDetailController.m in Sources */,
+				9FB8A57F17BD3DCC0086A03A /* Workout.m in Sources */,
+				9FB8A58217BD3DEB0086A03A /* Lift.m in Sources */,
+				9FB8A58517BD3E050086A03A /* Muscle.m in Sources */,
+				9FB8A58817BD3E1A0086A03A /* Exercise.m in Sources */,
+				9FB8A58B17BD3EC60086A03A /* Routine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9F0311AA17BA7CED0032E0DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F0311AB17BA7CED0032E0DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9F0311B917BA7CED0032E0DC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F0311BA17BA7CED0032E0DC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F0311C517BA7CED0032E0DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F0311C617BA7CED0032E0DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F0311C817BA7CED0032E0DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExerciseBuddy/ExerciseBuddy-Prefix.pch";
+				INFOPLIST_FILE = "ExerciseBuddy/ExerciseBuddy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9F0311C917BA7CED0032E0DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExerciseBuddy/ExerciseBuddy-Prefix.pch";
+				INFOPLIST_FILE = "ExerciseBuddy/ExerciseBuddy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F03119717BA7CED0032E0DC /* Build configuration list for PBXProject "ExerciseBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F0311C517BA7CED0032E0DC /* Debug */,
+				9F0311C617BA7CED0032E0DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F0311C717BA7CED0032E0DC /* Build configuration list for PBXNativeTarget "ExerciseBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F0311C817BA7CED0032E0DC /* Debug */,
+				9F0311C917BA7CED0032E0DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9F0311BC17BA7CED0032E0DC /* ExerciseBuddy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9F0311BD17BA7CED0032E0DC /* ExerciseBuddy.xcdatamodel */,
+			);
+			currentVersion = 9F0311BD17BA7CED0032E0DC /* ExerciseBuddy.xcdatamodel */;
+			path = ExerciseBuddy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9F03119417BA7CED0032E0DC /* Project object */;
+}
