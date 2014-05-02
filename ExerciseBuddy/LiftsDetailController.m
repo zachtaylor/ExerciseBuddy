@@ -15,7 +15,7 @@
 
 @end
 
-static NSString *CellIdentifier = @"LiftCell";
+static NSString *CellIdentifier = @"WorkoutListCell";
 
 @implementation LiftsDetailController
 
